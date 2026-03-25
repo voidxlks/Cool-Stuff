@@ -62,13 +62,15 @@ body {
 /* Contact Button */
 .contact-btn {
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
     border-radius: 10px;
     border: none;
-    font-weight: bold;
     cursor: pointer;
     background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
     color: black;
+    box-shadow: 0 0 15px rgba(255,255,255,0.4);
     transition: 0.3s;
 }
 
@@ -152,11 +154,20 @@ a {
 <!-- SCRIPT -->
 <script>
 function contact() {
-    let message = prompt("What would you like to say?");
+    let title = prompt("What would you like to say?");
     
-    if (message) {
-        let url = "https://github.com/voidxlks/Cool-Stuff/issues/new?title=" + encodeURIComponent(message);
-        window.open(url, "_blank");
+    if (title) {
+        let description = prompt("What will the description be?");
+        
+        if (description) {
+            let body = "### Message\n" + description + "\n\n---\nSent from website";
+            
+            let url = "https://github.com/voidxlks/Cool-Stuff/issues/new"
+                + "?title=" + encodeURIComponent(title)
+                + "&body=" + encodeURIComponent(body);
+                
+            window.open(url, "_blank");
+        }
     }
 }
 </script>
