@@ -166,7 +166,8 @@ function contact() {
                 + "?title=" + encodeURIComponent(title)
                 + "&body=" + encodeURIComponent(body);
                 
-            window.open(url, "_blank");
+            // FIX: no popup block
+            window.location.href = url;
         }
     }
 }
