@@ -1,0 +1,115 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About VoidXLKS</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+}
+
+/* Rainbow text */
+.rainbow {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    margin-top: 20px;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="rainbow">VoidXLKS</h1>
+
+<div class="container">
+    <div class="card">
+        <p>
+            VoidXLKS is a creative developer focused on building cool, interactive, and visually unique projects.
+            Known for experimenting with 2D games, drawing tools, and custom scripts, VoidXLKS brings ideas to life
+            with a mix of creativity and technical skill.
+        </p>
+
+        <h2 class="section-title">💡 Skills</h2>
+        <p>
+            • JavaScript & Web Development<br>
+            • Game Creation (2D)<br>
+            • UI Design & Effects<br>
+            • Creative Coding
+        </p>
+
+        <h2 class="section-title">🚀 Projects</h2>
+        <p>
+            From drawing apps to mini games and custom hubs, VoidXLKS creates projects that are fun, interactive,
+            and constantly evolving.
+        </p>
+
+        <h2 class="section-title">🎯 Goal</h2>
+        <p>
+            To build unique and creative experiences on the web and continue improving skills in coding,
+            design, and game development.
+        </p>
+
+        <a href="index.html" class="btn">⬅ Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>
+```
