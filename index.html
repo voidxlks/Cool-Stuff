@@ -14,10 +14,37 @@ body {
     text-align: center;
 }
 
-/* Rainbow title */
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+/* Rainbow hover effect */
+.navbar a:hover {
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Title */
 .rainbow {
     font-size: 3rem;
     font-weight: bold;
+    margin-top: 20px;
     background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,14 +84,12 @@ body {
     box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
 
-/* Rainbow titles */
 .card h2 {
     background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* Remove link styling */
 a {
     text-decoration: none;
     color: white;
@@ -73,6 +98,12 @@ a {
 </head>
 
 <body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="page2.html">About</a>
+</div>
 
 <h1 class="rainbow">My Website</h1>
 <p class="subtitle">Nothing More</p>
