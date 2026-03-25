@@ -1,0 +1,94 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>404 - Page Not Found</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar a:hover {
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Rainbow text */
+.rainbow {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 60px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Message */
+.message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="page2.html">About</a>
+</div>
+
+<h1 class="rainbow">404</h1>
+<p class="message">You have visited the wrong page.</p>
+
+<a href="index.html" class="btn">Go Back Home</a>
+
+</body>
+</html>
+```
