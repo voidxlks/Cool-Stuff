@@ -1,0 +1,136 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Website</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+}
+
+/* Rainbow text animation */
+.rainbow {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Subtitle */
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Project cards */
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* Rainbow titles */
+.card h2 {
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+footer {
+    margin: 40px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="rainbow">My Website</h1>
+<p class="subtitle">Nothing More</p>
+
+<div class="container">
+
+<div class="card">
+    <h2>2D Drawing App</h2>
+    <p>Draw freely with colors and tools.</p>
+</div>
+
+<div class="card">
+    <h2>Pixel Painter</h2>
+    <p>Create pixel art masterpieces.</p>
+</div>
+
+<div class="card">
+    <h2>Mini Platformer</h2>
+    <p>Jump through a simple 2D world.</p>
+</div>
+
+<div class="card">
+    <h2>Shape Builder</h2>
+    <p>Design and combine shapes creatively.</p>
+</div>
+
+<div class="card">
+    <h2>Snake Game</h2>
+    <p>Classic 2D snake with a twist.</p>
+</div>
+
+<div class="card">
+    <h2>Paint Simulator</h2>
+    <p>Realistic brush strokes and blending.</p>
+</div>
+
+<div class="card">
+    <h2>Tile Map Creator</h2>
+    <p>Build 2D game maps easily.</p>
+</div>
+
+<div class="card">
+    <h2>Stickman Animator</h2>
+    <p>Create simple animations frame-by-frame.</p>
+</div>
+
+<div class="card">
+    <h2>Color Match Game</h2>
+    <p>Test your reaction with colors.</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 My Cool Projects</p>
+</footer>
+
+</body>
+</html>
+```
